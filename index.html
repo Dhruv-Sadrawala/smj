@@ -5,28 +5,31 @@
 <title>YouTube Player</title>
 
 <style>
-body{
+html,body{
 margin:0;
+padding:0;
+height:100%;
 background:black;
-height:100vh;
-display:flex;
-justify-content:center;
-align-items:center;
+overflow:hidden;
 }
+
 iframe{
-width:80vw;
-max-width:1000px;
-aspect-ratio:16/9;
+position:absolute;
+top:0;
+left:0;
+width:100vw;
+height:100vh;
 border:none;
 }
 </style>
+
 </head>
 
 <body>
 
 <iframe
-src="https://www.youtube.com/embed/zzvHjVPnWwk?start=3552&autoplay=1&mute=1&controls=0"
-allow="autoplay"
+src="https://www.youtube.com/embed/zzvHjVPnWwk?start=3552&autoplay=1&controls=0&modestbranding=1&rel=0&fs=0"
+allow="autoplay; fullscreen"
 allowfullscreen>
 </iframe>
 
